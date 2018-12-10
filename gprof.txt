@@ -1,0 +1,267 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 79.35      3.07     3.07   888487     0.00     0.00  mandelbrot_ss4(std::complex<mpfr::mpreal>)
+ 10.34      3.47     0.40 11066054     0.00     0.00  std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator*=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&)
+  5.95      3.70     0.23  2170801     0.00     0.00  getColor(unsigned int, std::complex<mpfr::mpreal> const&, std::complex<mpfr::mpreal> const&)
+  2.84      3.81     0.11 14551615     0.00     0.00  std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator+=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&)
+  0.78      3.84     0.03  2103352     0.00     0.00  hsl_to_rgb(hsl_t)
+  0.52      3.86     0.02     3529     0.01     1.10  Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3}::operator()(unsigned long, unsigned long, unsigned long, unsigned long) const
+  0.26      3.87     0.01   866253     0.00     0.00  std::_Function_handler<sf::Color (std::complex<mpfr::mpreal>), sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_invoke(std::_Any_data const&, std::complex<mpfr::mpreal>&&)
+  0.00      3.87     0.00     3531     0.00     0.00  std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  0.00      3.87     0.00     3527     0.00     1.10  std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_invoke(std::_Any_data const&)
+  0.00      3.87     0.00     3515     0.00     0.00  std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  0.00      3.87     0.00     3512     0.00     0.00  std::_Function_handler<void (), ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+  0.00      3.87     0.00     3510     0.00     0.00  std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)
+  0.00      3.87     0.00     3509     0.00     0.00  std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  0.00      3.87     0.00     3505     0.00     0.00  std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  0.00      3.87     0.00     3502     0.00     0.00  std::_Function_base::_Base_manager<ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_manager(std::_Any_data&, ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1} const&, std::_Manager_operation)
+  0.00      3.87     0.00     3492     0.00     0.00  std::__future_base::_Result<void>::~_Result()
+  0.00      3.87     0.00     3487     0.00     0.00  std::_Function_base::_Base_manager<std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_manager(std::_Any_data&, std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> const&, std::_Manager_operation)
+  0.00      3.87     0.00     3456     0.00     0.00  std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)
+  0.00      3.87     0.00        8     0.00     0.00  std::_Function_base::_Base_manager<ThreadPool::ThreadPool(unsigned long)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<ThreadPool::ThreadPool(unsigned long)::{lambda()#1}> const&, std::_Manager_operation)
+  0.00      3.87     0.00        2     0.00     0.00  std::_Function_base::_Base_manager<sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      3.87     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)
+  0.00      3.87     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z10hsl_to_rgb5hsl_t
+  0.00      3.87     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z20mandelbrot_ss4_setupjjN4mpfr6mprealES0_j
+  0.00      3.87     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN6RenderC2EjjmSt8functionIFN2sf5ColorESt7complexIN4mpfr6mprealEEEE
+  0.00      3.87     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.26% of 3.87 seconds
+
+index % time    self  children    called     name
+                0.02    3.85    3529/3529        std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_invoke(std::_Any_data const&) [2]
+[1]    100.0    0.02    3.85    3529         Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3}::operator()(unsigned long, unsigned long, unsigned long, unsigned long) const [1]
+                0.01    3.84  866253/866253      std::_Function_handler<sf::Color (std::complex<mpfr::mpreal>), sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_invoke(std::_Any_data const&, std::complex<mpfr::mpreal>&&) [4]
+-----------------------------------------------
+                0.00    3.87    3527/3527        std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) [3]
+[2]    100.0    0.00    3.87    3527         std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_invoke(std::_Any_data const&) [2]
+                0.02    3.85    3529/3529        Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3}::operator()(unsigned long, unsigned long, unsigned long, unsigned long) const [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]    100.0    0.00    3.87                 std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) [3]
+                0.00    3.87    3527/3527        std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_invoke(std::_Any_data const&) [2]
+-----------------------------------------------
+                0.01    3.84  866253/866253      Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3}::operator()(unsigned long, unsigned long, unsigned long, unsigned long) const [1]
+[4]     99.5    0.01    3.84  866253         std::_Function_handler<sf::Color (std::complex<mpfr::mpreal>), sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_invoke(std::_Any_data const&, std::complex<mpfr::mpreal>&&) [4]
+                3.07    0.77  888487/888487      mandelbrot_ss4(std::complex<mpfr::mpreal>) [5]
+-----------------------------------------------
+                3.07    0.77  888487/888487      std::_Function_handler<sf::Color (std::complex<mpfr::mpreal>), sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_invoke(std::_Any_data const&, std::complex<mpfr::mpreal>&&) [4]
+[5]     99.2    3.07    0.77  888487         mandelbrot_ss4(std::complex<mpfr::mpreal>) [5]
+                0.23    0.51 2170801/2170801     getColor(unsigned int, std::complex<mpfr::mpreal> const&, std::complex<mpfr::mpreal> const&) [6]
+                0.03    0.00 3434470/14551615     std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator+=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&) [8]
+-----------------------------------------------
+                0.23    0.51 2170801/2170801     mandelbrot_ss4(std::complex<mpfr::mpreal>) [5]
+[6]     19.2    0.23    0.51 2170801         getColor(unsigned int, std::complex<mpfr::mpreal> const&, std::complex<mpfr::mpreal> const&) [6]
+                0.40    0.00 11066054/11066054     std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator*=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&) [7]
+                0.08    0.00 11117145/14551615     std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator+=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&) [8]
+                0.03    0.00 2103352/2103352     hsl_to_rgb(hsl_t) [9]
+-----------------------------------------------
+                0.40    0.00 11066054/11066054     getColor(unsigned int, std::complex<mpfr::mpreal> const&, std::complex<mpfr::mpreal> const&) [6]
+[7]     10.3    0.40    0.00 11066054         std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator*=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&) [7]
+-----------------------------------------------
+                0.03    0.00 3434470/14551615     mandelbrot_ss4(std::complex<mpfr::mpreal>) [5]
+                0.08    0.00 11117145/14551615     getColor(unsigned int, std::complex<mpfr::mpreal> const&, std::complex<mpfr::mpreal> const&) [6]
+[8]      2.8    0.11    0.00 14551615         std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator+=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&) [8]
+-----------------------------------------------
+                0.03    0.00 2103352/2103352     getColor(unsigned int, std::complex<mpfr::mpreal> const&, std::complex<mpfr::mpreal> const&) [6]
+[9]      0.8    0.03    0.00 2103352         hsl_to_rgb(hsl_t) [9]
+-----------------------------------------------
+                0.00    0.00    3531/3531        std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [18]
+[17]     0.0    0.00    0.00    3531         std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [17]
+-----------------------------------------------
+                0.00    0.00    3515/3515        std::_Function_base::_Base_manager<ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_manager(std::_Any_data&, ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1} const&, std::_Manager_operation) [23]
+[18]     0.0    0.00    0.00    3515         std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [18]
+                0.00    0.00    3531/3531        std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [17]
+                0.00    0.00    3505/3505        std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [22]
+                0.00    0.00    3492/3492        std::__future_base::_Result<void>::~_Result() [24]
+-----------------------------------------------
+                0.00    0.00    3512/3512        std::_Function_handler<void (), ThreadPool::ThreadPool(unsigned long)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [64]
+[19]     0.0    0.00    0.00    3512         std::_Function_handler<void (), ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [19]
+                0.00    0.00    3487/3487        std::_Function_base::_Base_manager<std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_manager(std::_Any_data&, std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00    3510/3510        Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal) [38]
+[20]     0.0    0.00    0.00    3510         std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&) [20]
+-----------------------------------------------
+                0.00    0.00    3509/3509        std::_Function_base::_Base_manager<ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_manager(std::_Any_data&, ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1} const&, std::_Manager_operation) [23]
+[21]     0.0    0.00    0.00    3509         std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [21]
+-----------------------------------------------
+                0.00    0.00    3505/3505        std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [18]
+[22]     0.0    0.00    0.00    3505         std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [22]
+-----------------------------------------------
+                0.00    0.00    3502/3502        std::_Function_handler<void (), ThreadPool::ThreadPool(unsigned long)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [64]
+[23]     0.0    0.00    0.00    3502         std::_Function_base::_Base_manager<ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_manager(std::_Any_data&, ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1} const&, std::_Manager_operation) [23]
+                0.00    0.00    3515/3515        std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [18]
+                0.00    0.00    3509/3509        std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [21]
+-----------------------------------------------
+                0.00    0.00    3492/3492        std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_dispose() [18]
+[24]     0.0    0.00    0.00    3492         std::__future_base::_Result<void>::~_Result() [24]
+-----------------------------------------------
+                0.00    0.00    3487/3487        std::_Function_handler<void (), ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [19]
+[25]     0.0    0.00    0.00    3487         std::_Function_base::_Base_manager<std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_manager(std::_Any_data&, std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> const&, std::_Manager_operation) [25]
+-----------------------------------------------
+                0.00    0.00    3456/3456        Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal) [38]
+[26]     0.0    0.00    0.00    3456         std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&) [26]
+-----------------------------------------------
+                0.00    0.00       1/8           Render::~Render() [40]
+                0.00    0.00       3/8           std::thread::_State_impl<std::thread::_Invoker<std::tuple<std::function<void ()> > > >::~_State_impl() [71]
+                0.00    0.00       4/8           Render::Render(unsigned int, unsigned int, unsigned long, std::function<sf::Color (std::complex<mpfr::mpreal>)>) [39]
+[27]     0.0    0.00    0.00       8         std::_Function_base::_Base_manager<ThreadPool::ThreadPool(unsigned long)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<ThreadPool::ThreadPool(unsigned long)::{lambda()#1}> const&, std::_Manager_operation) [27]
+-----------------------------------------------
+                0.00    0.00       1/2           Render::~Render() [40]
+                0.00    0.00       1/2           Render::Render(unsigned int, unsigned int, unsigned long, std::function<sf::Color (std::complex<mpfr::mpreal>)>) [39]
+[28]     0.0    0.00    0.00       2         std::_Function_base::_Base_manager<sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [28]
+-----------------------------------------------
+                0.00    0.00       2/2           mpfr::mpreal::output(std::ostream&) const [41]
+[29]     0.0    0.00    0.00       2         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) [29]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [84]
+[30]     0.0    0.00    0.00       1         _GLOBAL__sub_I__Z10hsl_to_rgb5hsl_t [30]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [84]
+[31]     0.0    0.00    0.00       1         _GLOBAL__sub_I__Z20mandelbrot_ss4_setupjjN4mpfr6mprealES0_j [31]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [84]
+[32]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN6RenderC2EjjmSt8functionIFN2sf5ColorESt7complexIN4mpfr6mprealEEEE [32]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [84]
+[33]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [33]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [30] _GLOBAL__sub_I__Z10hsl_to_rgb5hsl_t [28] std::_Function_base::_Base_manager<sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [21] std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
+  [31] _GLOBAL__sub_I__Z20mandelbrot_ss4_setupjjN4mpfr6mprealES0_j [23] std::_Function_base::_Base_manager<ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_manager(std::_Any_data&, ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1} const&, std::_Manager_operation) [18] std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  [32] _GLOBAL__sub_I__ZN6RenderC2EjjmSt8functionIFN2sf5ColorESt7complexIN4mpfr6mprealEEEE [27] std::_Function_base::_Base_manager<ThreadPool::ThreadPool(unsigned long)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Function_base::_Base_manager<ThreadPool::ThreadPool(unsigned long)::{lambda()#1}> const&, std::_Manager_operation) [20] std::_Sp_counted_ptr_inplace<std::packaged_task<void ()>, std::allocator<std::packaged_task<void ()> >, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)
+  [33] _GLOBAL__sub_I_main     [4] std::_Function_handler<sf::Color (std::complex<mpfr::mpreal>), sf::Color (*)(std::complex<mpfr::mpreal>)>::_M_invoke(std::_Any_data const&, std::complex<mpfr::mpreal>&&) [29] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)
+   [9] hsl_to_rgb(hsl_t)       [2] std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_invoke(std::_Any_data const&) [7] std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator*=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&)
+   [5] mandelbrot_ss4(std::complex<mpfr::mpreal>) [19] std::_Function_handler<void (), ThreadPool::enqueue<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)> >(std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>)::{lambda()#1}>::_M_invoke(std::_Any_data const&) [8] std::complex<mpfr::mpreal>& std::complex<mpfr::mpreal>::operator+=<mpfr::mpreal>(std::complex<mpfr::mpreal> const&)
+   [6] getColor(unsigned int, std::complex<mpfr::mpreal> const&, std::complex<mpfr::mpreal> const&) [17] std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_destroy() [1] Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3}::operator()(unsigned long, unsigned long, unsigned long, unsigned long) const
+  [24] std::__future_base::_Result<void>::~_Result() [22] std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
+  [25] std::_Function_base::_Base_manager<std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_manager(std::_Any_data&, std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> const&, std::_Manager_operation) [26] std::_Sp_counted_ptr_inplace<std::__future_base::_Task_state<std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, std::allocator<int>, void ()>, std::_Bind<Render::applyFilter(std::complex<mpfr::mpreal> const&, mpfr::mpreal, mpfr::mpreal)::{lambda(unsigned long, unsigned long, unsigned long, unsigned long)#3} (unsigned int, unsigned int, unsigned int, unsigned int)>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)
