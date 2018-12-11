@@ -70,8 +70,8 @@ void Render::applyFilter(const Complex &center, Real width, Real height)
         };
 
         // Enqueue all segments in the pool.
-        const unsigned SEG_WIDTH = 16;
-        const unsigned SEG_HEIGHT = 16;
+        const unsigned SEG_WIDTH = 4;
+        const unsigned SEG_HEIGHT = 4;
         for (unsigned seg_x = 0; seg_x < imageWidth ; seg_x += SEG_WIDTH)
         {   
             unsigned x_len = imageWidth < seg_x + SEG_WIDTH ? imageWidth % SEG_WIDTH : SEG_WIDTH;

@@ -9,7 +9,6 @@ static unsigned screen_height{};
 static mpfr::mpreal width{};
 static mpfr::mpreal height{};
 
-
 // Get a complex supersampled offset from a segment number.
 static std::complex<mpfr::mpreal> getOffsetSs4(int segment)
 {
@@ -27,7 +26,7 @@ static std::complex<mpfr::mpreal> getOffsetSs4(int segment)
 }
 
 // Returns the mean color of a sf::Color[] of 'n' elements.
-static sf::Color getMeanColor(sf::Color color[], std::size_t n)
+static sf::Color getMeanColor(sf::Color color[], std::size_t n) noexcept
 {
     sf::Color res{ 0, 0, 0 };
     for (std::size_t i = 0; i < n; ++i)
@@ -45,7 +44,7 @@ static sf::Color getMeanColor(sf::Color color[], std::size_t n)
 static mpfr::mpreal getConvergenceValue(
         unsigned iterations, 
         std::complex<mpfr::mpreal> zn,
-        std::complex<mpfr::mpreal> c)
+        const std::complex<mpfr::mpreal> &c) noexcept
 {
     using Real = mpfr::mpreal;
     const Real ESCAPE_RADIUS = 2.0;
@@ -61,7 +60,7 @@ static mpfr::mpreal getConvergenceValue(
 static sf::Color getColor(
         unsigned iterations,
         const std::complex<mpfr::mpreal> &zn,
-        const std::complex<mpfr::mpreal> &c)
+        const std::complex<mpfr::mpreal> &c) noexcept
 {
     using Real = mpfr::mpreal;
     if (iterations >= max_iterations)
@@ -80,7 +79,7 @@ static sf::Color getColor(
 
 }
 
-static void ss4Test(sf::Color *segments, int segment, std::complex<mpfr::mpreal> &c)
+static void ss4Test(sf::Color *segments, int segment, std::complex<mpfr::mpreal> &c) noexcept
 {
     using Real = mpfr::mpreal;
     Real zReal = 0;
@@ -105,7 +104,7 @@ static void ss4Test(sf::Color *segments, int segment, std::complex<mpfr::mpreal>
 
 
 // Setup the four times supersampler mandelbrot filter.
-void mandelbrot_ss4_setup(unsigned sw, unsigned sh, mpfr::mpreal w, mpfr::mpreal h, unsigned max_it)
+void mandelbrot_ss4_setup(unsigned sw, unsigned sh, mpfr::mpreal w, mpfr::mpreal h, unsigned max_it) noexcept
 {
     screen_width = sw;
     screen_height = sh;
@@ -115,7 +114,7 @@ void mandelbrot_ss4_setup(unsigned sw, unsigned sh, mpfr::mpreal w, mpfr::mpreal
 }
 
 // Filter for rendering a four times supersampled mandelbrot fractal.
-sf::Color mandelbrot_ss4(std::complex<mpfr::mpreal> cmplx)
+sf::Color mandelbrot_ss4(std::complex<mpfr::mpreal> cmplx) noexcept
 {
     using Real = mpfr::mpreal;
     using Complex = std::complex<Real>;
